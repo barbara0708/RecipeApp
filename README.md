@@ -21,11 +21,14 @@ Project is created with:
 * Firebase
 
 ## Illustrations
- ### Start page                Main Page
-![Start](./start.png) ![MainPage](./main.png)
+| ## Start page         |       Main Page |
+| ------------------ | --------------- |
+|![Start](./start.png)| ![MainPage](./main.png)|
 
-### Sign Up                     Login
-![SignUp](./signup.png) ![Login](./login.png)
+| Sign Up             |        Login   |
+| ------------------ | --------------- |
+| ![SignUp](./signup.png) | ![Login](./login.png) |
 
-### Recipe Page                  Liked Recipes
-![SignUp](./recipe.png) ![Login](./liked.png)
+| Recipe Page         |         Liked Recipes |
+| ------------------ | --------------- |
+|![SignUp](./recipe.png)| ![Login](./liked.png)|
