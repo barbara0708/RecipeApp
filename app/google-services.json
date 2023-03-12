@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "649449339482",
+    "project_id": "recipeapp-acb49",
+    "storage_bucket": "recipeapp-acb49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649449339482:android:64641e4810dbcbb51ef663",
+        "android_client_info": {
+          "package_name": "com.example.restaurantpos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649449339482-i6j2eu814a6o9tos29us7mjdn2c97htg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6c4DADcGvtufw851ZFcrDn0i96ffmJDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649449339482-i6j2eu814a6o9tos29us7mjdn2c97htg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

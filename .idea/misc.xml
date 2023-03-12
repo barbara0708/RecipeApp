@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/RestaurantPOS/app/src/main/res/drawable/arrow_black_left.xml" value="0.3769230769230769" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/drawable/button.xml" value="0.3828125" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/drawable/home.xml" value="0.22239583333333332" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/drawable/rounded.xml" value="0.3828125" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/drawable/rounded_edittext.xml" value="0.3828125" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/drawable/settings.xml" value="0.23425925925925925" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_day_meal_plan.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_event_edit.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_generate_meal_plan.xml" value="0.27280334728033473" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_liked_recipes.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_main2.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_main_menu_page.xml" value="0.21951219512195122" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_recipe_page.xml" value="0.33" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_registration.xml" value="0.33" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_search.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_twitter.xml" value="0.20625" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_week_meal_plan.xml" value="0.33958333333333335" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/activity_week_view_acctivity.xml" value="0.33" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/calendar_cell.xml" value="0.3390625" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/event_cell.xml" value="0.20625" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/header.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/item_latest.xml" value="0.25" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/item_search.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/list_meal_ingredients.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/list_meal_step.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/list_similar_recipe.xml" value="0.1" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/list_step.xml" value="0.6583679114799447" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/spinner_inner_text.xml" value="0.36666666666666664" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/layout/spinner_text.xml" value="1.70625" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/menu/main_menu.xml" value="0.3439153439153439" />
+        <entry key="..\:/RestaurantPOS/app/src/main/res/xml/network_security_confog.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

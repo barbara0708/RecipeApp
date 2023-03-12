@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Foodies</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="welcome">Welcome to Foodies!</string>
+    <string name="welcome2">Let\'s dive in the world of best cuisines around the world. Find new recipes and try them with your family or friends! </string>
+    <string name="sign_up">Sign up</string>
+    <string name="api_key">14d681f35c1745f188fc588f72ce4654</string>
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+
+    <string name="facebook_app_id">612555763780156</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">9c6016e68bd791d7f28efb8a512cb63c</string>
+
+    <string name="google_client_id">649449339482-i6j2eu814a6o9tos29us7mjdn2c97htg.apps.googleusercontent.com</string>
+    <string name="prevButton"><![CDATA[<-]]></string>
+    <string name="nextButton"><![CDATA[->]]></string>
+    <string name="liked_desc">Save recipes that you like here and cook them later!</string>
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
+</resources>
