@@ -3,6 +3,8 @@ package com.example.restaurantpos;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,13 +26,13 @@ import com.example.restaurantpos.Models.Recipe;
 import java.util.ArrayList;
 
 public class GenerateMealPlanActivity extends AppCompatActivity {
-    AutoCompleteTextView autoDiet, autoTimeFrame;
+    AutoCompleteTextView autoDiet;
+    Dialog dialog;
     EditText etCalories;
     Button btnGenerate;
     String[]dietTypes=new String[]{"Gluten Free","Ketogenic","Vegetarian","Lacto-Vegetarian","Ovo-Vegetarian","Vegan","Pescetarian","Paleo","Primal","Low FODMAP","Whole30"};
-    String []timeFrames=new String[]{"day","week"};
     RequestManager manager;
-    String diet, calories, timeFrame;
+    String diet, calories;
     TextView tvFirstDish, tvSecondDish, tvThirdDish, tvTime1, tvTime2, tvTime3;
     ScrollView scroll;
     CardView cvFirst, cvSecond, cvThird;
@@ -40,23 +42,19 @@ public class GenerateMealPlanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_generate_meal_plan);
         findViews();
         autoDiet.setAdapter(new ArrayAdapter<>(GenerateMealPlanActivity.this, android.R.layout.simple_list_item_1,dietTypes));
-        autoTimeFrame.setAdapter(new ArrayAdapter<>(GenerateMealPlanActivity.this, android.R.layout.simple_list_item_1,timeFrames));
         manager=new RequestManager(this);
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                timeFrame=autoTimeFrame.getText().toString();
                 diet=autoDiet.getText().toString();
                 calories=etCalories.getText().toString();
                 manager.getGeneratedMealPlanDay(generatedMealPlanDayListener,calories,diet);
-                if(timeFrame.equals("day")){
-                    showPlan();
-                }else if (timeFrame.equals("week")){
-                    startActivity(new Intent(getApplicationContext(),WeekViewActivity.class).putExtra("calories",calories).putExtra("diet",diet));
-                }
-
+                showPlan();
             }
         });
+        dialog=new ProgressDialog(this);
+        dialog.setTitle("Loading...");
+
     }
 
     private void showPlan() {
@@ -66,7 +64,6 @@ public class GenerateMealPlanActivity extends AppCompatActivity {
     private final GeneratedMealPlanDayListener generatedMealPlanDayListener=new GeneratedMealPlanDayListener() {
         @Override
         public void didFetch(GeneratedMealPlanResponse response, String message) {
-            Nutrients nutrients=response.nutrients;
             ArrayList<Meal>meals=response.meals;
             tvFirstDish.setText(meals.get(0).title);
             tvSecondDish.setText(meals.get(1).title);
@@ -92,6 +89,7 @@ public class GenerateMealPlanActivity extends AppCompatActivity {
                     startActivity(new Intent(GenerateMealPlanActivity.this, RecipePage.class).putExtra("id",String.valueOf(meals.get(2).id)));
                 }
             });
+            dialog.dismiss();
         }
 
         @Override
@@ -101,7 +99,6 @@ public class GenerateMealPlanActivity extends AppCompatActivity {
     };
     private void findViews() {
         autoDiet=findViewById(R.id.autoDiet);
-        autoTimeFrame=findViewById(R.id.autoTimeFrame);
         etCalories=findViewById(R.id.etCalories);
         btnGenerate=findViewById(R.id.btnGenerate);
         tvFirstDish=findViewById(R.id.tvFirstDish);
