@@ -21,7 +21,7 @@ Project is created with:
 * Firebase
 
 ## Illustrations
-| ## Start page         |       Main Page |
+|  Start page         |       Main Page |
 | ------------------ | --------------- |
 |![Start](./start.png)| ![MainPage](./main.png)|
 
